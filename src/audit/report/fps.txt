@@ -1,0 +1,9 @@
+1. Import of the entire interface. (I)
+    -> Use specific imports.
+
+2. Wrong implementation of generic Transfer event. (L)
+    -> to, from, amount ==> from, to, amount
+
+3. No checks for zero address in the constructor. (L)
+
+4. Funds are transferred from contract balance, not from caller balance (C).

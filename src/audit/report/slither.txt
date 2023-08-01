@@ -1,0 +1,22 @@
+INFO:Detectors:
+BUSDWallet.sendToken(address,uint256) (BUSDWallet.sol#14-20) ignores return value by busdToken.transfer(to,amount) (BUSDWallet.sol#18)
+BUSDWallet.receiveToken(uint256) (BUSDWallet.sol#22-26) ignores return value by busdToken.transferFrom(msg.sender,address(this),amount) (BUSDWallet.sol#23)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-transfer
+
+INFO:Detectors:
+Pragma version0.8.20 (BUSDWallet.sol#2) necessitates a version too recent to be trusted. Consider deploying with 0.8.18.
+
+Pragma version0.8.20 (IBEP20.sol#2) necessitates a version too recent to be trusted. Consider deploying with 0.8.18.
+solc-0.8.20 is not recommended for deployment
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+INFO:Detectors:
+BUSDWallet.busdToken (BUSDWallet.sol#7) should be immutable
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+
+INFO:Detectors:
+Pragma version0.8.20 (IBEP20.sol#2) necessitates a version too recent to be trusted. Consider deploying with 0.8.18.
+solc-0.8.20 is not recommended for deployment
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+INFO:Slither:. analyzed (3 contracts with 88 detectors), 10 result(s) found
