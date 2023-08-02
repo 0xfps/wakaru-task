@@ -13,7 +13,3 @@ docs/
 # Dotenv file
 .env
 .idea
-.vscode
-lib
-script
-test
